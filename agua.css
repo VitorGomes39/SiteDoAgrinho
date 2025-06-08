@@ -1,0 +1,84 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.img-agua {
+  width: 600px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-agua1 {
+      width: 350px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-agua2 {
+      width: 350px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cabecalho h3{
+    color: rgb(8, 28, 206);
+}
+
+p .alinha{
+    text-align: right;
+}
+
+.img-agro{
+    width: 300px;
+}
+
+.br-3{
+    border-radius: 3px;
+}
+
+.img-slide{
+    max-height: 400px;
+}
+
+.footer{
+    background-color: black;
+    color: rgb(0, 60, 255);
+    text-align: center;
+    padding: 5px;
+}
+
+.botao-voltar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: transparent; /* ou use 'black' se quiser combinar com fundo preto */
+    border: 2px solid gray;
+    border-radius: 12px;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.botao-voltar:hover {
+    background-color: rgba(128, 128, 128, 0.2); /* leve destaque no hover */
+}

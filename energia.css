@@ -1,0 +1,134 @@
+.img-agua {
+  width: 600px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-energia {
+      width: 300px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.img-agua3 {
+      width: 300px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.br-3 {
+  border-radius: 3px;
+}
+
+.img-slide {
+  max-height: 400px;
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 30px;
+}
+
+.cabecalho h3 {
+  color: rgb(206, 206, 8);
+}
+
+.footer {
+  width: 100%;
+  background-color: black;
+  color: yellow;
+  text-align: center;
+  padding: 15px;
+  margin: 0;
+}
+
+.botao-voltar {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: transparent;
+  border: 2px solid gray;
+  border-radius: 12px;
+  padding: 10px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.botao-voltar:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+.texto-lado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 3rem;
+}
+
+.texto-lado p {
+  max-width: 500px;
+}
+
+.botao-mais {
+  background-color: rgb(167, 167, 145);
+  border: 2px solid black;
+  color: black;
+  padding: 4px 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.botao-mais:hover {
+  background-color: #ffeb37;
+}
+
+/* Linha decorativa que aparece com o texto extra */
+.linha-animada {
+  position: relative;
+  padding-left: 30px;
+  margin-top: 2rem;
+}
+
+.linha-animada::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 20px;
+  height: calc(100% + 20px);
+  border-left: 3px solid #000000;
+  border-bottom: 3px solid #000000;
+  border-bottom-left-radius: 15px;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+.collapse:not(.show).linha-animada::before {
+  opacity: 0;
+}

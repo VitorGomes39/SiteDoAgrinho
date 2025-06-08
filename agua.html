@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Água na Zona Rural</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="agua.css">
+    <style>
+        .botao-voltar {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: transparent;
+            border: 2px solid gray;
+            border-radius: 12px;
+            padding: 10px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+
+        .botao-voltar:hover {
+            background-color: rgba(128, 128, 128, 0.2);
+        }
+
+        .imagem-com-texto {
+            position: relative;
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+        }
+
+        .texto-sobre-imagem {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 80%;
+        }
+
+        .texto-lado {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 3rem;
+        }
+
+        .texto-lado p {
+            max-width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Botão voltar -->
+    <a href="index.html" class="botao-voltar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="gray" class="bi bi-arrow-left"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z" />
+        </svg>
+    </a>
+
+    <!-- Apresentação -->
+    <section class="cabecalho">
+        <h1>AGRINHO</h1>
+        <h3>Disponibilidade de Água</h3>
+    </section>
+
+    <!-- Conteúdo principal -->
+    <div class="container pt-5 pb-5">
+        <!-- Introdução -->
+        <div class="row mb-4">
+            <div class="col">
+                <h2 class="text-center">O Valor da Água no Cidade</h2>
+                <p>
+A água é essencial para a vida urbana. Nas cidades, ela está presente em praticamente todas as atividades do dia a dia: abastecimento doméstico, preparo de alimentos, higiene pessoal, limpeza pública, funcionamento de hospitais, escolas, indústrias e até no lazer, como em parques e piscinas.
+
+O que muitas pessoas esquecem é que grande parte dessa água vem da zona rural. Rios, nascentes, represas e aquíferos localizados no campo são as principais fontes que abastecem as cidades. Por isso, cuidar da água no campo é também cuidar da qualidade de vida nas cidades.                </p>
+            </div>
+        </div>
+
+        <!-- Imagem ilustrativa -->
+        <div class="row mb-4">
+            <div class="col text-center">
+                <img src="assets/image/lago.png" class="img-fluid rounded img-agua" alt="Imagem sobre uso da água no campo">
+            </div>
+        </div>
+
+        <!-- Texto complementar -->
+        <div class="row mb-5">
+            <div class="col">
+                <p>
+Além disso, a escassez de água ou sua contaminação afetam diretamente a população urbana, podendo causar racionamentos, doenças e aumento dos custos com saneamento. A preservação de matas ciliares, o uso consciente dos recursos naturais e políticas públicas voltadas para a gestão hídrica são essenciais para garantir água de qualidade para todos.
+                </p>
+            </div>
+        </div>
+
+        <!-- TEXTO 1 - SOBRE A IMAGEM DO LAGO DE LARANJEIRAS -->
+        <!-- <section class="imagem-com-texto">
+            <img src="assets/image/lago-laranjeiras.jpg" class="img-fluid rounded" alt="Lago de Laranjeiras do Sul">
+            <div class="texto-sobre-imagem">
+                <h3>O Lago e a Vida Rural</h3>
+                <p>
+                    O Lago de Laranjeiras do Sul é um símbolo da ligação entre a natureza e as pessoas do campo.
+                    Ele mostra como a água, quando cuidada, pode trazer vida, beleza e sustento para todos.
+                    Proteger esse recurso é garantir um futuro cheio de colheitas, alegria e saúde para quem vive na zona rural.
+                </p>
+            </div>
+        </section>
+        -->
+
+        <!-- TEXTO 2 - TEXTO À ESQUERDA, IMAGEM À DIREITA -->
+        <section class="texto-lado">
+            <div>
+                <h3>A Importância da Água para o Campo</h3>
+                <p>
+No campo, a água é sinônimo de produção, vida e desenvolvimento. Ela é necessária para irrigar plantações, dar de beber aos animais, processar alimentos e manter a rotina das famílias que vivem na zona rural. Sem água em quantidade e qualidade adequadas, a produção agrícola e pecuária não consegue prosperar.
+
+Sistemas de irrigação eficientes, captação de água da chuva, uso racional e proteção de nascentes são algumas das práticas que ajudam os agricultores a garantir esse recurso tão valioso. Além disso, o campo depende de políticas que incentivem o uso sustentável da água e que protejam o meio ambiente, pois são os produtores rurais os primeiros a sentir os impactos da escassez ou da poluição hídrica.
+
+Manter a água limpa e acessível no campo significa garantir a continuidade da produção de alimentos, o desenvolvimento das comunidades rurais e a segurança alimentar da população urbana.
+                </p>
+            </div>
+            <!-- SUBSTITUA AQUI PELA IMAGEM DA IRRIGAÇÃO -->
+            <img src="assets/image/aguamedialago.png" class="img-fluid rounded img-agua1" alt="Sistema de irrigação por gotejamento">
+        </section>
+
+        <!-- TEXTO 3 - TEXTO À DIREITA, IMAGEM À ESQUERDA -->
+        <section class="texto-lado flex-row-reverse">
+            <div>
+                <h3>Cuidar Com A Contaminação</h3>
+                <p>
+O uso de agrotóxicos sem os devidos cuidados pode contaminar rios, nascentes e os lençóis freáticos — que são fontes de água potável para o campo e para a cidade. Quando os agrotóxicos infiltram no solo, eles atingem as águas subterrâneas e colocam em risco a saúde das pessoas, dos animais e o equilíbrio dos ecossistemas.
+
+Por isso, é fundamental o uso responsável desses produtos, com orientação técnica, respeito às normas ambientais e investimento em práticas sustentáveis. Cuidar da água é proteger a vida no campo e na cidade.
+                </p>
+            </div>
+            <!-- SUBSTITUA AQUI PELA IMAGEM DA NASCENTE -->
+            <img src="assets/image/aguamediario.png" class="img-fluid rounded img-agua2" alt="Nascente preservada">
+        </section>
+    </div>
+
+  <!-- Rodapé fora do container para preencher toda a largura -->
+  <div class="footer text-center p-3">
+    <p>Todos os direitos reservados para Agrinho 2025 - Festejando a conexão campo-cidade.</p>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
